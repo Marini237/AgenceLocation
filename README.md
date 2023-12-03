@@ -1,2 +1,2 @@
 # AgenceLocation
-cette apllication permet la gestion des location et des locataire par un bailleur
+cette apllication permet la gestion d une agence de voyage
