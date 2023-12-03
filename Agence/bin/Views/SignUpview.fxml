@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="281.0" styleClass="white-pane" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="S' inscrire" textFill="#f80f13">
+         <VBox.margin>
+            <Insets left="20.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="200.0" styleClass="tf_box" stylesheets="@../application/application.css">
+         <children>
+            <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Nom de l utilisateur" style="-fx-background-color: transparent; -fx-border-color: #DEDEE4; -fx-border-width: 0px 0px 1px 0px;" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIconView fill="#cdbfbf" glyphName="USER" size="18" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="213.0" prefHeight="35.0" prefWidth="200.0">
+         <children>
+            <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Adesse mail" style="-fx-background-color: transparent; -fx-border-color: #DEDEE4; -fx-border-width: 0px 0px 1px 0px;" styleClass="tf_box" stylesheets="@../application/application.css" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIconView fill="#cdbfbf" glyphName="USER" size="18" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="213.0" prefHeight="35.0" prefWidth="200.0">
+         <children>
+            <TextField maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Mot de pass" style="-fx-background-color: transparent; -fx-border-color: #DEDEE4; -fx-border-width: 0px 0px 1px 0px;" styleClass="tf_box" stylesheets="@../application/application.css" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIconView fill="#cdbfbf" glyphName="LOCK" size="18" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="200.0">
+         <children>
+            <JFXButton prefHeight="31.0" prefWidth="83.0" styleClass="pint-btn" stylesheets="@../application/application.css" text="s' inscrire" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

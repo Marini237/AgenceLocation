@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="415.0" prefWidth="684.0" styleClass="blackgrnd" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlers.LesTrajetVoyagescontrolers">
+   <children>
+      <Label layoutX="23.0" layoutY="54.0" text="Recherche">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txt_searchid" layoutX="127.0" layoutY="50.0" promptText="identifiant" />
+      <JFXComboBox fx:id="cb_categoriebus" layoutX="30.0" layoutY="145.0" onMouseClicked="#remplircategoriebus" prefHeight="31.0" prefWidth="169.0" promptText="CategorieBus" unFocusColor="#7294ac" />
+      <Label fx:id="tab_url" layoutX="427.0" layoutY="199.0" prefHeight="21.0" prefWidth="134.0" text="aucune selectionée" textFill="#2e7fb5">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table_trajetdevoyage" layoutX="21.0" layoutY="233.0" onMouseClicked="#tabletrajetdevoyageEvent" prefHeight="117.0" prefWidth="630.0" styleClass="tables-view" stylesheets="@../application/application.css" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="33.0">
+        <columns>
+          <TableColumn fx:id="cln_id" prefWidth="61.0" text="id" />
+            <TableColumn fx:id="cln_nomdetrajetvoyage" prefWidth="149.0" text="nomdetrajetvoyage" />
+            <TableColumn fx:id="cln_destination" prefWidth="99.0" text="Destination" />
+            <TableColumn fx:id="cln_numerobus" prefWidth="102.0" text="NuméroBus" />
+            <TableColumn fx:id="cln_categoriebus" prefWidth="102.0" text="CategorieBus" />
+          <TableColumn fx:id="cln_lieudedepart" prefWidth="116.0" text="Lieu_de_départ" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="image_trajetdevoyage" fitHeight="186.0" fitWidth="296.0" layoutX="401.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="5.0" />
+      <FontAwesomeIconView glyphName="SEARCH" layoutX="296.0" layoutY="71.0" onMouseClicked="#searchtrajetdevoyage" size="19" />
+      <FontAwesomeIconView fx:id="icon_importer" glyphName="UPLOAD" layoutX="395.0" layoutY="215.0" onMouseClicked="#importerImage" size="25" />
+      <JFXButton fx:id="btn_add" layoutX="199.0" layoutY="360.0" onMouseClicked="#ajoutertrajetdevoyage" prefHeight="31.0" prefWidth="89.0" styleClass="buttons" stylesheets="@../application/application.css" text="Ajouter" />
+      <JFXButton fx:id="btn_edit" layoutX="301.0" layoutY="360.0" onMouseClicked="#modifiertrajetdevoyage" prefHeight="31.0" prefWidth="89.0" styleClass="buttons" stylesheets="@../application/application.css" text="Modifier" />
+      <JFXButton fx:id="btn_delete" layoutX="401.0" layoutY="360.0" onMouseClicked="#supprimertrajetdevoyage" styleClass="buttons" stylesheets="@../application/application.css" text="Supprimer" />
+      <JFXComboBox fx:id="cb_numerobus" layoutX="212.0" layoutY="145.0" onMouseClicked="#remplirnumerobus" prefHeight="31.0" prefWidth="169.0" promptText="NuméroBus" unFocusColor="#7294ac" />
+      <JFXTextField fx:id="txt_trajet" layoutX="30.0" layoutY="191.0" prefHeight="31.0" prefWidth="169.0" promptText="identifiant" text="Nomdetrajetdevoyage" unFocusColor="#b2b3bf" />
+      <JFXComboBox fx:id="cb_destination" layoutX="211.0" layoutY="95.0" onMouseClicked="#remplirnumerobus" prefHeight="31.0" prefWidth="169.0" promptText="destination" unFocusColor="#7294ac" />
+      <JFXComboBox fx:id="cb_lieudedepart" layoutX="29.0" layoutY="95.0" onMouseClicked="#remplircategoriebus" prefHeight="31.0" prefWidth="169.0" promptText="lieudedepart" unFocusColor="#7294ac" />
+   </children>
+</AnchorPane>

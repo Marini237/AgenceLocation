@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlers.Homecontrolers">
+   <children>
+      <AnchorPane layoutX="41.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #373737;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="700.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutY="7.0" prefHeight="92.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="32.0" layoutY="34.0" text="DreamsServices" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Separator layoutY="89.0" prefWidth="200.0" />
+               </children>
+            </Pane>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="160.0" onMouseClicked="#Bus_Voyage" prefHeight="32.0" prefWidth="176.0" text="Bus-Voyage" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="160.0">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="STORE" size="17" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="210.0" onMouseClicked="#Chauffeur" prefHeight="32.0" prefWidth="176.0" text="Chauffeur" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="210.0">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT" size="17" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="316.0" onMouseClicked="#Tickets_de_bus" prefHeight="32.0" prefWidth="176.0" text="Tickets de bus" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="316.0">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="FILE_DOCUMENT" size="17" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="370.0" onMouseClicked="#Les_Trajets_Voyage" prefHeight="32.0" prefWidth="176.0" text="Les Trajets-Voyage" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="370.0">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="HOME_MODERN" size="17" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="20.0" layoutY="260.0" onMouseClicked="#Clients" prefHeight="32.0" prefWidth="176.0" text="Clients" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="260.0">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="ACCOUNT_MULTIPLE" size="17" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="root" layoutX="200.0" layoutY="126.0" prefHeight="410.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" />
+      <Pane layoutX="198.0" layoutY="-63.0" prefHeight="92.0" prefWidth="700.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="image_user" fitHeight="60.0" fitWidth="101.0" layoutX="587.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lab_userName" layoutX="444.0" layoutY="40.0" text="Nom de l utilsateur" textFill="#fffbfb" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
